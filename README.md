@@ -1,6 +1,8 @@
 # 🎵 JigglyPuff
 
-A macOS mouse jiggler with a modern dark-mode GUI. Keeps your machine awake, your status green, and your screen from locking — with enough features to actually be useful.
+A macOS mouse jiggler with a modern dark mode GUI. Keeps your machine awake, your status green, and your screen from locking — with enough features to actually be kinda useful.
+
+This was migrated from an old deralict Github account.
 
 ---
 
@@ -56,7 +58,7 @@ Live counters updated every second while running:
 
 ### 1. Install Tcl/Tk
 
-> **Important:** If you're using pyenv, Python must be built with Tcl/Tk support or the GUI will fail to launch. Skip this if you're using the pre-built `.app` bundle.
+> **Important:** If you're using pyenv, Python must be built with Tcl/Tk support or the GUI will fail to launch. Skip this if you're using the prebuilt `.app` bundle.
 
 ```bash
 brew install tcl-tk
@@ -135,9 +137,9 @@ open dist/JigglyPuff.app
 
 | Consideration | Detail |
 |---|---|
-| **Gatekeeper** | The app is unsigned. Recipients must right-click → Open → Open to bypass the "unidentified developer" warning on first launch. |
+| **Gatekeeper** | The app is unsigned. Recipients must right click → Open → Open to bypass the "unidentified developer" warning on first launch. |
 | **Architecture** | The build targets the architecture of the machine it was built on. An Apple Silicon build will **not** run on Intel Macs. Build on the target arch, or use `lipo` to merge two builds into a universal binary. |
-| **Accessibility** | Every Mac will prompt for Accessibility permission on first use — this cannot be pre-granted. |
+| **Accessibility** | Every Mac will prompt for Accessibility permission on first use — this cannot be pregranted. |
 | **macOS version** | Requires macOS High Sierra (10.13) or newer. |
 
 To check your build's architecture:
