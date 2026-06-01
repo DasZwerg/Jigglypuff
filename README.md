@@ -1,6 +1,6 @@
 # 🎵 JigglyPuff
 
-A macOS mouse jiggler with a modern dark mode GUI. Keeps your machine awake, your status green, and your screen from locking — with enough features to actually be kinda useful.
+A macOS mouse jiggler with a modern dark mode GUI. Keeps your machine awake, your status green, and your screen from locking with enough features to actually be kinda useful.
 
 This was migrated from an old deralict Github account.
 
