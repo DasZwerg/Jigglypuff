@@ -107,7 +107,7 @@ Without this permission, the engine will start but mouse/keyboard actions will s
 
 ## Building a Standalone .app
 
-JigglyPuff can be packaged into a double-clickable `.app` bundle using PyInstaller. The bundle includes Python, all dependencies, and the audio file — no Python installation required on the target machine.
+JigglyPuff can be packaged into a double-clickable `.app` bundle using PyInstaller. The bundle includes Python, all dependencies, and the audio file, no Python installation required on the target machine.
 
 ### 1. Install PyInstaller
 
@@ -137,9 +137,10 @@ open dist/JigglyPuff.app
 
 | Consideration | Detail |
 |---|---|
+| **Admin Required for Accessibility Perms** | This is non-negotiable, unfortunately this is required for the mouse to be controlled. This is a macOS limitation |
 | **Gatekeeper** | The app is unsigned. Recipients must right click → Open → Open to bypass the "unidentified developer" warning on first launch. |
 | **Architecture** | The build targets the architecture of the machine it was built on. An Apple Silicon build will **not** run on Intel Macs. Build on the target arch, or use `lipo` to merge two builds into a universal binary. |
-| **Accessibility** | Every Mac will prompt for Accessibility permission on first use — this cannot be pregranted. |
+| **Accessibility** | Every Mac will prompt for Accessibility permission on first use. This cannot be pregranted. |
 | **macOS version** | Requires macOS High Sierra (10.13) or newer. |
 
 To check your build's architecture:
@@ -170,7 +171,7 @@ jigglypuff/
 | Package | Purpose |
 |---|---|
 | `PyAutoGUI` | Mouse movement, keyboard simulation, screen size detection |
-| `customtkinter` | Modern dark-mode GUI framework (built on tkinter) |
+| `customtkinter` | Modern dark mode GUI framework (built on tkinter) |
 
 ---
 
